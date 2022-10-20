@@ -1,0 +1,11 @@
+.preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.subImgs {
+  display: flex;
+  gap: 20px;
+}

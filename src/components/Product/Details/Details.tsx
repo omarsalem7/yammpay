@@ -1,10 +1,12 @@
 import { useState } from 'react';
 import Rate from '../../shared/Rate';
 import RadioCheck from '../../shared/RadioCheck';
+import Button from '../../shared/Button';
 import styles from './details.module.css';
 import Btn from '../../../assets/icons/image 9.svg';
 import Add from '../../../assets/icons/add.svg';
 import Sub from '../../../assets/icons/subs.svg';
+import Call from '../../../assets/icons/call.svg';
 
 type DetailsPropType = {
   data: {
@@ -17,7 +19,7 @@ type DetailsPropType = {
   };
 };
 const Details = ({ data }: DetailsPropType) => {
-  const [counter, setCounter] = useState(0);
+  const [counter, setCounter] = useState(1);
   return (
     <div>
       <h1 className={styles.title}>{data.title}</h1>
@@ -60,7 +62,7 @@ const Details = ({ data }: DetailsPropType) => {
         <h3>Storage capacity</h3>
         <div className={styles.dflex}>
           {data.capacity.map((cap) => (
-            <RadioCheck key={Math.random() * 100} name="color" value={cap}>
+            <RadioCheck key={Math.random() * 100} name="storage" value={cap}>
               <span>
                 <span className={styles.fsXL}>{cap}</span> <sub>GB</sub>
               </span>
@@ -68,7 +70,7 @@ const Details = ({ data }: DetailsPropType) => {
           ))}
         </div>
       </div>
-      <div>
+      <div className={styles.pad15}>
         Quantity <span style={{ color: 'red' }}>$12,000</span>
       </div>
       <div>
@@ -88,15 +90,27 @@ const Details = ({ data }: DetailsPropType) => {
           <div>{counter} pieces</div>
         </div>
       </div>
-      <div>
+      <div className={styles.pad20}>
         Shipping <span style={{ color: 'red' }}>$12,000</span>
       </div>
 
-      <div className={styles.dflex}>
+      <div className={`${styles.dflex} ${styles.pad20}`}>
         <h3>Total</h3>
-        <span style={{ color: '#38B349' }} className={styles.fsXL}>
+        <span style={{ color: 'var(--green)' }} className={styles.fsXL}>
           $12,100
         </span>
+      </div>
+
+      <div className={`${styles.dflex} ${styles.pad15}`}>
+        <Button color="var(--green)">
+          <span>Place order now</span>
+        </Button>
+        <Button color="var(--dark)">
+          <span className={styles.dflex}>
+            <img src={Call} alt="call" />
+            Call us
+          </span>
+        </Button>
       </div>
     </div>
   );

@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <nav>
       <ul className={styles.navItems}>
-        <li>ZUMAR</li>
+        <li style={{ fontWeight: 'bold' }}>ZUMAR</li>
         <ul>
           <li>Services</li>
           <li>Orders</li>

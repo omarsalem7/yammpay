@@ -6,8 +6,13 @@
 
 .review {
   display: flex;
-  gap: 60px;
+  gap: 25px;
   padding: 15px 0;
+}
+
+.review img {
+  width: 20px;
+  max-width: 100%;
 }
 
 .gray {
@@ -16,7 +21,7 @@
 
 .pieces {
   display: flex;
-  gap: 30px;
+  gap: 25px;
 }
 
 .pieces {

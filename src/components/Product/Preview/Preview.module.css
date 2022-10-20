@@ -5,7 +5,17 @@
   justify-content: center;
 }
 
+.preview img {
+  width: 600px;
+  max-width: 100%;
+}
+
 .subImgs {
   display: flex;
   gap: 20px;
+}
+
+.subImgs img {
+  width: 106px;
+  max-width: 100%;
 }

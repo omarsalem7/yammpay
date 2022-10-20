@@ -2,10 +2,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-left: 0;
 }
 
 .navItems ul {
   display: flex;
-  gap: 20px;
+  gap: 15px;
   align-items: center;
+}
+
+@media screen and (max-width: 1170px) {
+  .navItems ul {
+    gap: 5px;
+  }
 }

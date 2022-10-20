@@ -12,7 +12,7 @@ function App() {
 }
 
 const Container = styled.div`
-  margin: 15px 30px;
+  margin: 15px 20px;
 `;
 
 export default App;

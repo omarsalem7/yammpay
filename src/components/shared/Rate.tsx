@@ -10,7 +10,14 @@ const Rate = ({ stars }: RatePropType) => {
     <Div>
       {[1, 2, 3, 4, 5].map((star) => {
         if (stars >= star) {
-          return <img key={Math.random() * 100} src={Star} alt="yes star" />;
+          return (
+            <img
+              width="40%"
+              key={Math.random() * 100}
+              src={Star}
+              alt="yes star"
+            />
+          );
         } else {
           return <img key={Math.random() * 100} src="" alt="np star" />;
         }

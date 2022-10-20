@@ -1,0 +1,66 @@
+.title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.review {
+  display: flex;
+  gap: 25px;
+  padding: 15px 0;
+}
+
+.review img {
+  width: 20px;
+  max-width: 100%;
+}
+
+.gray {
+  color: var(--gray);
+}
+
+.pieces {
+  display: flex;
+  gap: 25px;
+}
+
+.pieces {
+  padding-left: 0;
+}
+
+.pieces h2 {
+  margin-top: 10px;
+}
+
+.dflex {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.fsXL {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.counterBtn {
+  background: var(--whiteGray);
+  width: fit-content;
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 10px;
+  border-radius: 20px;
+  margin: 25px 0;
+}
+
+.counterContainer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.pad15 {
+  padding: 15px 0;
+}

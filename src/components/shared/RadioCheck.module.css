@@ -1,0 +1,32 @@
+.ckButton {
+  margin: 4px;
+  border-radius: 4px;
+  overflow: auto;
+  display: flex;
+}
+
+.ckButton label {
+  display: flex;
+}
+
+.ckButton label span {
+  text-align: center;
+  padding: 3px 0px;
+  display: flex;
+  align-items: center;
+  padding: 5px 8px;
+}
+
+.ckButton label span img {
+  padding-right: 5px;
+}
+
+.ckButton label input {
+  position: absolute;
+  top: -20px;
+}
+
+.ckButton input:checked + span {
+  background-color: var(--whiteGray);
+  color: #000;
+}

@@ -3,6 +3,8 @@
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
+  --gray: #999cad;
+  --whiteGray: #ecf1f4;
 }
 
 ul {

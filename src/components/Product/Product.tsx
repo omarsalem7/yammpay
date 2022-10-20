@@ -11,7 +11,7 @@ const Product = () => {
     stars: 5,
     colors: ['Black', 'Red', 'Green'],
     shipping: 100,
-    capacity: [128, 256, 512],
+    capacity: ['128', '256', '512'],
   });
   return (
     <div className={styles.product}>

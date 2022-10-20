@@ -1,0 +1,58 @@
+.title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.review {
+  display: flex;
+  gap: 60px;
+  padding: 15px 0;
+}
+
+.gray {
+  color: #999cad;
+}
+
+.pieces {
+  display: flex;
+  gap: 30px;
+}
+
+.pieces {
+  padding-left: 0;
+}
+
+.pieces h2 {
+  margin-top: 10px;
+}
+
+.ckButton {
+  margin: 4px;
+  background-color: #efefef;
+  border-radius: 4px;
+  border: 1px solid #d0d0d0;
+  overflow: auto;
+  float: left;
+}
+
+.ckButton label {
+  float: left;
+  width: 4em;
+}
+
+.ckButton label span {
+  text-align: center;
+  padding: 3px 0px;
+  display: block;
+}
+
+.ckButton label input {
+  position: absolute;
+  top: -20px;
+}
+
+.ckButton input:checked + span {
+  background-color: #911;
+  color: #fff;
+}
